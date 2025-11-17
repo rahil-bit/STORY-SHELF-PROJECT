@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<section id="checkout">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+    <h1>Story Shelf Creations</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="register.html">Register</a>
+        <a href="checkout.html">Checkout</a>
+        
+    </nav>
+    </header>
+    
+
+<!-- Checkout Section -->
+    <section id="checkout">
+    <h2>Shipping Details</h2>
+    <form>
+        <label for="cname">Full Name</label>
+        <input type="text" id="cname" placeholder="Your Name" required>
+
+        <label for="cemail">Email</label>
+        <input type="email" id="cemail" placeholder="you@example.com" required>
+
+        <label for="caddress">Shipping Address</label>
+        <textarea id="caddress" placeholder="Street, City, Country" required></textarea>
+
+        <label for="payment">Payment Method</label>
+        <select id="payment" required>
+            <option value="">Select</option>
+            <option value="card">Credit / Debit Card</option>
+            <option value="cod">Cash on Delivery</option>
+        </select>
+
+        <button type="submit" class="btn">Place Order</button>
+    </form>
+    </section>
+
+    <footer>
+    <p>&copy;Story Shelf Creations. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
