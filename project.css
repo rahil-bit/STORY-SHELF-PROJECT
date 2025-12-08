@@ -257,6 +257,23 @@ footer {
     border-radius: 8px;
     border: 1px solid #ccc;
 }
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
 
+  nav a {
+    margin: 8px;
+    font-size: 16px;
+  }
 
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 
+  #searchBar {
+    width: 90%;
+  }
+}

@@ -1,25 +1,25 @@
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price) {
     let item = cart.find(i => i.name === name);
-
     if (item) {
         item.qty++;
     } else {
-        cart.push({ name: name, price: price, qty: 1 });
+        cart.push({ name, price, qty: 1 });
     }
-
+    localStorage.setItem("cart", JSON.stringify(cart));
     alert("Added to cart");
-    loadCart();
 }
 
 function removeItem(i) {
     cart.splice(i, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
     loadCart();
 }
 
 function clearCart() {
     cart = [];
+    localStorage.removeItem("cart");
     loadCart();
 }
 
@@ -37,16 +37,15 @@ function loadCart() {
     cart.forEach((item, i) => {
         let div = document.createElement("div");
         div.className = "cart-item";
-
         div.innerHTML = `
-            <p>${item.name} – ₹${item.price} × ${item.qty}</p>
+            <p>${item.name} — ₹${item.price} × ${item.qty}</p>
             <button onclick="removeItem(${i})">Remove</button>
         `;
-
         box.appendChild(div);
     });
 }
 
+window.onload = loadCart;
 
 function searchProduct() {
     let text = document.getElementById("searchBar").value.toLowerCase();
