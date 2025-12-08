@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
+  <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search products..." onkeyup="searchProduct()">
+  </div>
+
+
    <header>
     <h1>Story Shelf Creations</h1>
     <nav>
@@ -14,7 +19,8 @@
         <a href="about.html">About</a>
         <a href="products.html">Products</a>
         <a href="register.html">Register</a>
-        <a href="checkout.html">Checkout</a>
+        
+
         
     </nav>
     </header>
@@ -30,7 +36,9 @@
       <div class="product-info">
         <h3>Story Journal</h3>
         <p>Handcrafted journals to capture your creative ideas.</p>
-        <a href="checkout.html" class="btn-small">Add to Cart</a>
+        <button class="btn-small" onclick="addToCart('Story Journal', 10)">Add to Cart</button>
+
+
       </div>
     </div>
 
@@ -39,7 +47,10 @@
       <div class="product-info">
         <h3>Art Prints</h3>
         <p>Beautifully illustrated prints to decorate your space.</p>
-        <a href="checkout.html" class="btn-small">Add to Cart</a>
+        <!-- <a href="checkout.html" class="btn-small">Add to Cart</a> -->
+        <button class="btn-small" onclick="addToCart('Art Prints', 12)">Add to Cart</button>
+
+
       </div>
     </div>
 
@@ -48,7 +59,10 @@
       <div class="product-info">
         <h3>Story Cards</h3>
         <p>Cards designed to spark imagination and creativity.</p>
-        <a href="checkout.html" class="btn-small">Add to Cart</a>
+        <!-- <a href="checkout.html" class="btn-small">Add to Cart</a> -->
+        <button class="btn-small" onclick="addToCart('Story Cards', 12)">Add to Cart</button>
+ 
+
       </div>
     </div>
 
@@ -57,16 +71,17 @@
       <div class="product-info">
         <h3>Handcrafted Bookmarks</h3>
         <p>Elegant bookmarks inspired by classic tales and artistry.</p>
-        <a href="checkout.html" class="btn-small">Add to Cart</a>
+        <!-- <a href="checkout.html" class="btn-small">Add to Cart</a> -->
+        <button class="btn-small" onclick="addToCart('Handcrafted Bookmarks', 12)">Add to Cart</button>
       </div>
     </div>
-
     <div class="product-card">
       <img src="https://images.stockcake.com/public/d/d/9/dd993d41-414e-49ef-8684-5773a4279d77_large/candlelit-wooden-shelves-stockcake.jpg" alt="Scented Story Candles">
       <div class="product-info">
         <h3>Scented Story Candles</h3>
         <p>Each candle tells a tale — perfect for reading and relaxation.</p>
-        <a href="checkout.html" class="btn-small">Add to Cart</a>
+        <!-- <a href="checkout.html" class="btn-small">Add to Cart</a> -->
+        <button class="btn-small" onclick="addToCart('Scented Story Candles', 12)">Add to Cart</button>
       </div>
     </div>
 
@@ -75,12 +90,19 @@
       <div class="product-info">
         <h3>Creative Writing Kit</h3>
         <p>A complete set to ignite your storytelling journey — pens, notes & cards.</p>
-        <a href="checkout.html" class="btn-small">Add to Cart</a>
+        <!-- <a href="checkout.html" class="btn-small">Add to Cart</a> -->
+        <button class="btn-small" onclick="addToCart('Creative Writing Kit', 12)">Add to Cart</button>
+
       </div>
     </div>
 
   </div>
+  
+
 </section>
+
+<script src="basic.js"></script>
 
 </body>
 </html>
+

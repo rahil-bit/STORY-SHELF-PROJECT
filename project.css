@@ -225,4 +225,38 @@ footer {
   margin-top: 50px;
   color: #6b3e26;
 }
+#cartBox div {
+    padding: 12px;
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cartBox button {
+    padding: 6px 12px;
+    background: crimson;
+    color: #fff;
+    border-radius: 6px;
+}
+
+#cartBox button:hover {
+    background: red;
+}
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchBar {
+    width: 60%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
 
